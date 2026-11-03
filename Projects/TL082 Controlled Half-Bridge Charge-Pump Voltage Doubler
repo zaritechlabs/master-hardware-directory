@@ -85,7 +85,7 @@ Because the flying capacitor is stacked on top of the input voltage every cycle,
 | 2 | 2N2222 | NPN transistor | MOSFET gate drivers |
 | 2 | IRFZ44N | N-channel power MOSFET | Half-bridge switches |
 | 2 | Power diode | Fast / Schottky recommended | Input and output pump diodes |
-| 1 | 1N4148 | Fast signal diode | Bootstrap diode |
+| 1 | UF4007 | Fast signal diode | Bootstrap diode |
 | 1 | Capacitor | 10uF | Flying capacitor |
 | 1 | Capacitor | 100uF | Output capacitor |
 | 1 | Capacitor | 1uF-10uF | Bootstrap capacitor |
@@ -95,7 +95,7 @@ Because the flying capacitor is stacked on top of the input voltage every cycle,
 | 1 | Resistor | 180kΩ | Inverter gain |
 | 1 | Resistor | 27kΩ | 3.24V reference (upper) |
 | 5 | Resistor | 10kΩ | 6V bias divider (x2), 3.24V reference (lower), base resistors (x2) |
-| 1 | Resistor | 9.1kΩ | Low-side pull-up |
+| 2 | Resistor | 9.1kΩ | Low-side pull-up |
 
 Quantities are taken from the schematic description; adjust to your final layout. Use a **Schottky diode** for the pump diodes if you want a higher output voltage and better efficiency.
 
@@ -173,6 +173,7 @@ No. The ideal value is 2 x V<sub>in</sub>, but diode drops and load reduce it.
 
 Issues, suggestions and pull requests are welcome. If you build this circuit, please share your measurements and layout photos.
 
-## License
+## ⚖️ Governance & License
+This ecosystem is maintained under the **MIT License** and managed by **Zaritech Labs**. 
 
-Add your preferred license here (for example MIT for open hardware and documentation).
+*May Allah grant us success on this path.*
